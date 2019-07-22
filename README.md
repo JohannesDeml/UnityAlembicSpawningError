@@ -1,6 +1,6 @@
 # Alembic Spawning Problem
 
-Instantiating an alembic during runtime can't find the alembic in the build. Works in the Editor and an Alembic as a simple GameObject in the Scene works as well. Only alembics that are added afterwards to the scene won't be bundled in the Build.
+Instantiating an alembic during runtime can't find the alembic in the build. Works in the Editor and an Alembic as a simple GameObject in the Scene works as well. Only alembics that are added afterwards to the scene won't be bundled in the Build. [Unity Thread](https://forum.unity.com/threads/missing-alembic-streaming-assets.635320/#post-4771649)
 
 ## Reproduce
 
@@ -13,7 +13,7 @@ Two cubes are visible
 The Alembic cube that is set in the scene is visible, the cube that should be instantiated, is not visible since the file can't be found in the streaming assets  
 Error:  
 ```
-failed to load alembic at C:/Data/Documents/Unity/BugReports/AlembicSpawning/Builds/AlembicSpawningProblem/AlembicSpawningProblem_Data/StreamingAssets\Assets/_Project/Meshes/Cube.abc
+failed to load alembic at C:/AlembicSpawning/Builds/AlembicSpawningProblem/AlembicSpawningProblem_Data/StreamingAssets\Assets/_Project/Meshes/Cube.abc
 UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
