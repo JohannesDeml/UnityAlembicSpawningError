@@ -4,7 +4,7 @@ Instantiating an alembic during runtime can't find the alembic in the build. Wor
 
 ## Reproduce
 
-Build the project for Windows Standalone as a development build. Run the project. Alternatively you can also download the build in the release section
+Build the project for Windows Standalone as a development build. Run the project. Alternatively you can also download the build in the [release section](https://github.com/JohannesDeml/UnityAlembicSpawningError/releases/).
 
 ### Expected Result
 Two cubes are visible
