@@ -1,3 +1,7 @@
+## Update: Problem fixed
+
+I created a simple fix by copying the files to the data folder in the build as a Post Build step. See [CopyFilesPostProcessBuild](./Assets/_Project/Scripts/Editor/CopyFilesPostProcessBuild.cs)
+
 # Alembic Spawning Problem
 
 Instantiating an alembic during runtime can't find the alembic in the build. Works in the Editor and an Alembic as a simple GameObject in the Scene works as well. Only alembics that are added afterwards to the scene won't be bundled in the Build. [Unity Thread](https://forum.unity.com/threads/missing-alembic-streaming-assets.635320/#post-4771649)
